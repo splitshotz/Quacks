@@ -1,4 +1,4 @@
-package src;
+
 
 public class Chip {
 	private String color;
