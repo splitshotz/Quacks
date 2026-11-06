@@ -4,19 +4,13 @@ import java.awt.image.*;
 import javax.imageio.*;
 import java.io.*;
 
-public class MainMenu extends JPanel {
+public class MainMenu extends gameScreen {
 	
 	private BufferedImage titleScreen, scoreBoard, shop, roundStart, playerSetup, gameOver, evaluation, brewing;
 	
 	public MainMenu() throws IOException {
-		titleScreen = ImageIO.read(MainMenu.class.getResource("/images/TitleScreen.png"));
+		super("/images/TitleScreen.png");
 		
 		
-	}
-	
-	public void paint(Graphics g) {
-		super.paint(g);
-		
-		g.drawImage(titleScreen, 0, 0, 1280, 720, this);
 	}
 }
