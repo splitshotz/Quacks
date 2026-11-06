@@ -6,10 +6,12 @@ import java.io.*;
 
 public class MainMenu extends JPanel {
 	
-	private BufferedImage titleScreen;
+	private BufferedImage titleScreen, scoreBoard, shop, roundStart, playerSetup, gameOver, evaluation, brewing;
 	
 	public MainMenu() throws IOException {
 		titleScreen = ImageIO.read(MainMenu.class.getResource("/images/TitleScreen.png"));
+		
+		
 	}
 	
 	public void paint(Graphics g) {
