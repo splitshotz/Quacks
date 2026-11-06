@@ -9,7 +9,7 @@ public class MainMenu extends gameScreen {
 	private BufferedImage titleScreen, scoreBoard, shop, roundStart, playerSetup, gameOver, evaluation, brewing;
 	
 	public MainMenu() throws IOException {
-		super("/images/TitleScreen.png");
+		super("/images/TitleScreen.png"); 
 		
 		
 	}

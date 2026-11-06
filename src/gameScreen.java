@@ -22,4 +22,4 @@ public class gameScreen extends JPanel {
 		
 		g.drawImage(backgroundImage, 0, 0, 1280, 720, this);
 	}
-}
+} 
