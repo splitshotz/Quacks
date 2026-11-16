@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.image.*;
 import javax.imageio.*;
 import java.io.*;
-
+import java.awt.event.MouseEvent;
 public class PlayerSetup extends gameScreen {
 	
 	public PlayerSetup() throws IOException {
@@ -13,4 +13,14 @@ public class PlayerSetup extends gameScreen {
 		
 		
 	}
+	
+	@Override
+    public void mouseClicked(MouseEvent e) {
+        int clickX = e.getX();
+        int clickY = e.getY();
+
+        System.out.println("Clicked at: " + clickX + ", " + clickY);
+        
+        repaint();
+    }
 }
