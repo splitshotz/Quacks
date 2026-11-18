@@ -9,9 +9,11 @@ import java.io.*;
 import java.awt.event.MouseEvent;
 public class MainMenu extends gameScreen {
 	
+	private Button playButton = new Button(167, 394, 590, 680);
+	
 	public MainMenu() throws IOException {
 		super("/images/TitleScreen.png"); 
-		
+		buttonList.add(playButton);
 		
 	}
 	
@@ -22,6 +24,9 @@ public class MainMenu extends gameScreen {
 
         System.out.println("Clicked at: " + clickX + ", " + clickY);
         
+        if (playButton.wasClicked(clickX, clickY)) {
+        	System.out.println("PLAY BUTTON CLICKED!");
+        }
         repaint();
     }
 }

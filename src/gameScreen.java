@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.image.*;
@@ -11,6 +11,7 @@ import java.awt.event.MouseEvent;
 public class gameScreen extends JPanel implements MouseListener {
 	
 	private BufferedImage backgroundImage;
+	protected ArrayList<Button> buttonList = new ArrayList<Button>();
 	
 	public gameScreen(String path) throws IOException {
 		if (path != null) {
