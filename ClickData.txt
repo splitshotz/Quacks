@@ -1,0 +1,2 @@
+TitleScreen Startbutton: topLeft: 167,590   bottomRight: 394,680
+TitleScreen Quitbutton:  topLeft: 910,590   bottomRight: 1138,680
