@@ -29,10 +29,17 @@ public class QuacksFrame extends JFrame {
 		add(mainPanel);
 		setVisible(true);
 		
-		//test
+		//Starts on main screen
 		cardLayout.show(mainPanel, "mainMenu");
 		
 	}
+	
+	//This must be called from GameState, not here!!!
+	public void setScreen(String screenName) {
+		cardLayout.show(mainPanel, screenName);
+	}
+	
+	
 	
 	
 }

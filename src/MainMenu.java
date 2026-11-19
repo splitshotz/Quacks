@@ -32,6 +32,7 @@ public class MainMenu extends gameScreen {
         if (exitButton.wasClicked(clickX, clickY)) {
         	System.exit(0);
         }
+        
         repaint();
     }
 }

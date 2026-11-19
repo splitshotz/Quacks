@@ -14,6 +14,10 @@ public class GameState {
 		decisions = new LinkedList<>();
 	}
 	
+	public void setScreen(String screenName) {
+		QuacksRunner.getQFrame().setScreen(screenName);
+	}
+	
 	public void startTurn() {
 		
 	}
