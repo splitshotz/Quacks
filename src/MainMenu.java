@@ -8,7 +8,5 @@ public class MainMenu extends gameScreen {
 	
 	public MainMenu() throws IOException {
 		super("/images/TitleScreen.png"); 
-		
-		
 	}
 }

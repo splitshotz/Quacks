@@ -1,5 +1,6 @@
 
 
+
 public class PendingDecision {
 	private int type;
 	private Player player;

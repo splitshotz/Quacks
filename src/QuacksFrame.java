@@ -22,6 +22,13 @@ public class QuacksFrame extends JFrame {
 		//Add different screens here
 		MainMenu mainMenu = new MainMenu();
 		mainPanel.add(mainMenu, "mainMenu");
+		Shop shop = new Shop();
+		mainPanel.add(shop, "Shop");
+		StartRound startRound = new StartRound();
+		mainPanel.add(startRound, "Start Round");
+		ScoreBoard scoreBoard = new ScoreBoard();
+		mainPanel.add(scoreBoard, "Score Board");
+		
 		
 		//Main one:
 		add(mainPanel);
