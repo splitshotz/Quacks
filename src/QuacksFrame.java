@@ -1,3 +1,5 @@
+
+
 import java.awt.*;
 import java.io.IOException;
 
@@ -21,15 +23,21 @@ public class QuacksFrame extends JFrame {
 		
 		//Add different screens here
 		MainMenu mainMenu = new MainMenu();
-		mainPanel.add(mainMenu, "mainMenu");
+		mainPanel.add(mainMenu, "MainMenu");
 		Shop shop = new Shop();
 		mainPanel.add(shop, "Shop");
 		StartRound startRound = new StartRound();
-		mainPanel.add(startRound, "Start Round");
+		mainPanel.add(startRound, "StartRound");
 		ScoreBoard scoreBoard = new ScoreBoard();
-		mainPanel.add(scoreBoard, "Score Board");
-		
-		
+		mainPanel.add(scoreBoard, "ScoreBoard");
+		Evaluation evaluation = new Evaluation();
+		mainPanel.add(evaluation, "Evaluation");
+		Brewing brewing = new Brewing();
+		mainPanel.add(brewing, "Brewing");
+		GameOver gameOver = new GameOver();
+		mainPanel.add(gameOver, "GameOver");
+		PlayerSetup playerSetup = new PlayerSetup();
+		mainPanel.add(playerSetup, "PlayerSetup");
 		//Main one:
 		add(mainPanel);
 		setVisible(true);
