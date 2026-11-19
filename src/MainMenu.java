@@ -10,6 +10,7 @@ import java.awt.event.MouseEvent;
 public class MainMenu extends gameScreen {
 	
 	private Button playButton = new Button(167, 394, 590, 680);
+	private Button exitButton = new Button(910, 1138, 590, 680);
 	
 	public MainMenu() throws IOException {
 		super("/images/TitleScreen.png"); 
@@ -26,6 +27,10 @@ public class MainMenu extends gameScreen {
         
         if (playButton.wasClicked(clickX, clickY)) {
         	System.out.println("PLAY BUTTON CLICKED!");
+        }
+        
+        if (exitButton.wasClicked(clickX, clickY)) {
+        	System.exit(0);
         }
         repaint();
     }
