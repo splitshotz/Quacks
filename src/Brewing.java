@@ -13,4 +13,13 @@ public class Brewing extends gameScreen {
 		
 		
 	}
+	@Override
+    public void mouseClicked(MouseEvent e) {
+        int clickX = e.getX();
+        int clickY = e.getY();
+
+        System.out.println("Clicked at: " + clickX + ", " + clickY);
+        
+        repaint();
+    }
 }
